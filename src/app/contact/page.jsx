@@ -222,7 +222,7 @@ const ContactForm = () => {
 
           <Button
             type="submit"
-            className="w-full bg-[#731644]"
+            className="w-full bg-[#731644] cursor-pointer"
           >
             <i className="fas fa-paper-plane mr-2"></i>
             Send Message
