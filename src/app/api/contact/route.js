@@ -1,5 +1,24 @@
 import nodemailer from 'nodemailer';
 
+const allowedOrigin = process.env.NODE_ENV === "development"
+  ? "http://localhost:3000"
+  : "https://procuresolutions.org";
+
+function corsHeaders() {
+  return {
+    "Access-Control-Allow-Origin": allowedOrigin,
+    "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+    "Access-Control-Allow-Headers": "Content-Type",
+  };
+}
+
+export async function OPTIONS() {
+  return new Response(null, {
+    status: 204,
+    headers: corsHeaders(),
+  });
+}
+
 export async function POST(req) {
   try {
     const body = await req.json();
@@ -50,13 +69,19 @@ export async function POST(req) {
 
     return new Response(
       JSON.stringify({ success: true, message: "Email sent successfully" }),
-      { status: 200 }
+      {
+        status: 200,
+        headers: corsHeaders(),
+      }
     );
   } catch (error) {
     console.error("❌ Email send error:", error.message, error);
     return new Response(
       JSON.stringify({ success: false, message: error.message }),
-      { status: 500 }
+      {
+        status: 500,
+        headers: corsHeaders(),
+      }
     );
   }
 }
