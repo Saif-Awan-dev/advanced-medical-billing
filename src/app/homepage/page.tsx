@@ -151,7 +151,7 @@ const Homepage = () => {
           <CarouselPrevious className="left-2 sm:left-4 z-10" />
           <CarouselNext className="right-2 sm:right-4 z-10" />
         </Carousel>
-        <Carousel className="block lg:hidden md:hidden">
+        <Carousel className="block px-1 lg:hidden md:hidden">
           <CarouselContent>
             {mobileBanners?.map((banner, idx) => (
               <CarouselItem key={idx} >
@@ -160,8 +160,9 @@ const Homepage = () => {
                     src={banner}
                     alt={`Banner_${idx + 1}`}
                     priority={idx === 0}
-                    // fill
-                    // className="object-cover"
+                    width={1000}
+                    height={1000}
+                    className="object-cover w-full"
                   />
                 </div>
               </CarouselItem>
