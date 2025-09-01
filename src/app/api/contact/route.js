@@ -64,9 +64,21 @@
 // app/api/contact/route.js
 
 // app/api/contact/route.js
+import { NextResponse } from 'next/server';
 import { Resend } from 'resend';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
+
+export async function OPTIONS() {
+  return NextResponse.json({}, {
+    status: 200,
+    headers: {
+      "Access-Control-Allow-Origin": "*", // Allow all origins or specify your domain
+      "Access-Control-Allow-Methods": "POST, OPTIONS",
+      "Access-Control-Allow-Headers": "Content-Type",
+    },
+  });
+}
 
 export async function POST(req) {
   try {
@@ -90,13 +102,17 @@ export async function POST(req) {
 
     return new Response(JSON.stringify({ success: true }), {
       status: 200,
-      headers: { 'Content-Type': 'application/json' },
+      headers: {
+        "Access-Control-Allow-Origin": "*", // Allow all origins or specify your domain
+      },
     });
   } catch (err) {
     console.error(err);
     return new Response(JSON.stringify({ success: false, message: err.message }), {
       status: 500,
-      headers: { 'Content-Type': 'application/json' },
+      headers: {
+        "Access-Control-Allow-Origin": "*",
+      },
     });
   }
 }
