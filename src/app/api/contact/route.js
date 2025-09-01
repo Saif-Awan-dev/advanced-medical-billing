@@ -79,12 +79,14 @@ function getCorsHeaders(origin) {
     "Access-Control-Allow-Origin": allowedOrigin,
     "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
     "Access-Control-Allow-Headers": "Content-Type",
+    "Access-Control-Allow-Credentials": "true"
   };
 }
 
 export async function OPTIONS(req) {
   const origin = req.headers.get("origin") || "";
-  return new Response(null, {
+  return new Response(null,
+    {
     status: 204,
     headers: getCorsHeaders(origin),
   });
