@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
+import toast from 'react-hot-toast';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -75,6 +76,7 @@ const ContactForm = () => {
       });
 
       if (res.ok) {
+        toast.success("Message sent successfully!");
         setIsSubmitted(false);
         setFormData({
           firstName: '',
@@ -87,18 +89,19 @@ const ContactForm = () => {
         });
       } else {
         alert("Failed to send message. Please try again.");
+        toast.error("Failed to send message.");
       }
     } catch (err) {
       console.error(err);
-      alert("Something went wrong.");
+      toast.error("Something went wrong.");
     }
   };
 
   return (
     <div className="max-w-2xl mx-auto bg-background rounded-xl shadow-md overflow-hidden border my-10">
       <div className="bg-[#731644] text-primary-foreground p-6 text-center">
-        <h2 className="text-2xl font-bold">Get In Touch</h2>
-        <p className="mt-2">We'd love to hear from you. Please fill out the form below.</p>
+        <h2 className="text-2xl font-bold dark:text-white">Get In Touch</h2>
+        <p className="mt-2 dark:text-white">We'd love to hear from you. Please fill out the form below.</p>
       </div>
 
       <div className="p-6">
@@ -222,7 +225,7 @@ const ContactForm = () => {
 
           <Button
             type="submit"
-            className="w-full bg-[#731644] cursor-pointer"
+            className="w-full bg-[#731644] cursor-pointer dark:text-white"
           >
             <i className="fas fa-paper-plane mr-2"></i>
             Send Message

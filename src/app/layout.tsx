@@ -5,6 +5,7 @@ import { ThemeProvider } from "next-themes";
 import Navbar from "@/components/ui/common/navbar";
 import Footer from "@/components/ui/common/footer";
 import Tagline from "@/components/ui/common/tagline";
+import { Toaster } from "react-hot-toast";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -38,6 +39,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" enableSystem defaultTheme="system">
           <Navbar />
           {children}
+            <Toaster position="top-center" reverseOrder={false} />
           <Footer />
         </ThemeProvider>
 

@@ -120,10 +120,10 @@ const Homepage = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      if (nextRef.current) {
+      if (nextRef.current) { 
         nextRef.current.click()
       }
-    }, 3000) // change slide every 3 seconds
+    }, 3000) // change slide every 1 second
 
     return () => clearInterval(interval)
   }, [])
@@ -149,7 +149,7 @@ const Homepage = () => {
             ))}
           </CarouselContent>
           <CarouselPrevious className="left-2 sm:left-4 z-10" />
-          <CarouselNext className="right-2 sm:right-4 z-10" />
+          <CarouselNext ref={nextRef} className="right-2 sm:right-4 z-10" />
         </Carousel>
         <Carousel className="block px-1 lg:hidden md:hidden">
           <CarouselContent>
@@ -169,7 +169,7 @@ const Homepage = () => {
             ))}
           </CarouselContent>
           <CarouselPrevious className="left-2 sm:left-4 z-10" />
-          <CarouselNext className="right-2 sm:right-4 z-10" />
+          <CarouselNext ref={nextRef} className="right-2 sm:right-4 z-10" />
         </Carousel>
       </section>
 
@@ -261,7 +261,7 @@ we’re more than a call centre — we’re your trusted extension in solar.`}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <Card className="overflow-hidden border-0 shadow-lg hover:shadow-xl transition-shadow bg-[#731664]">
                 <div className="flex flex-col md:flex-row">
-                  <div className="md:w-2/5 relative h-48 md:h-auto">
+                  <div className="md:w-2/5 relative h-76 md:h-auto">
                     <Image
                       src={FinalExpImage}
                       alt="EMR Support"
@@ -368,7 +368,7 @@ we help your agency close more sales and grow with confidence.`}
                 <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100 font-semibold">
                   <Link href="https://form.typeform.com/to/bC12UNMU?typeform-source=procure.li">Get Started</Link>
                 </Button>
-                <Button size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white/10">
+                <Button size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white">
                   <Link href="/contact">Contact Sales</Link>
                 </Button>
               </div>
