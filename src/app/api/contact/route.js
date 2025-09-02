@@ -81,6 +81,7 @@ export async function OPTIONS() {
 }
 
 export async function POST(req) {
+  console.log('Received a new contact form submission');
   try {
     const body = await req.json();
     const { firstName, lastName, email, company, phone, zipCode, message } = body;
