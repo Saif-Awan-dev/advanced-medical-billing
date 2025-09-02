@@ -148,7 +148,7 @@ export async function POST(req) {
     const { firstName, lastName, email, company, phone, zipCode, message } =
       await req.json();
 
-    const fromAddress = "Procure Solutions <info@procuresolutions.org>";
+    const fromAddress = "Procure Solutions <noreply@procuresolutions.org>";
     // Once your domain is verified, switch to:
     // const fromAddress = "Procure Solutions <noreply@procuresolutions.org>";
 
