@@ -64,58 +64,123 @@
 // app/api/contact/route.js
 
 // app/api/contact/route.js
-import { NextResponse } from 'next/server';
-import { Resend } from 'resend';
+// import { NextResponse } from 'next/server';
+// import { Resend } from 'resend';
+
+// const resend = new Resend(process.env.RESEND_API_KEY);
+
+// export async function OPTIONS() {
+//   return NextResponse.json({}, {
+//     status: 200,
+//     headers: {
+//       "Access-Control-Allow-Origin": "*", // Allow all origins or specify your domain
+//       "Access-Control-Allow-Methods": "POST, OPTIONS",
+//       "Access-Control-Allow-Headers": "Content-Type",
+//     },
+//   });
+// }
+
+// export async function POST(req) {
+//   console.log('Received a new contact form submission');
+//   try {
+//     const body = await req.json();
+//     const { firstName, lastName, email, company, phone, zipCode, message } = body;
+
+//     await resend.emails.send({
+//       from: 'Procure Solutions <noreply@procuresolutions.org>', // use a domain you verified
+//       to: process.env.CONTACT_RECEIVER, // your receiving email
+//       subject: 'New Contact Form Submission',
+//       html: `
+//         <h2>New Contact Form Submission</h2>
+//         <p><b>Name:</b> ${firstName} ${lastName}</p>
+//         <p><b>Email:</b> ${email}</p>
+//         <p><b>Company:</b> ${company}</p>
+//         <p><b>Phone:</b> ${phone}</p>
+//         <p><b>Zip Code:</b> ${zipCode}</p>
+//         <p><b>Message:</b> ${message}</p>
+//       `,
+//     });
+
+//     return new Response(JSON.stringify({ success: true }), {
+//       status: 200,
+//       headers: {
+//         "Access-Control-Allow-Origin": "*", // Allow all origins or specify your domain
+//       },
+//     });
+//   } catch (err) {
+//     console.error(err);
+//     return new Response(JSON.stringify({ success: false, message: err.message }), {
+//       status: 500,
+//       headers: {
+//         "Access-Control-Allow-Origin": "*",
+//       },
+//     });
+//   }
+// }
+import { NextResponse } from "next/server";
+import { Resend } from "resend";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-export async function OPTIONS() {
-  return NextResponse.json({}, {
-    status: 200,
-    headers: {
-      "Access-Control-Allow-Origin": "*", // Allow all origins or specify your domain
-      "Access-Control-Allow-Methods": "POST, OPTIONS",
-      "Access-Control-Allow-Headers": "Content-Type",
-    },
-  });
+const allowedOrigins = [
+  "https://procuresolutions.org",
+  "http://localhost:3000",
+  "http://127.0.0.1:3000",
+];
+
+function cors(origin) {
+  const allowed = allowedOrigins.includes(origin) ? origin : allowedOrigins[0];
+  return {
+    "Access-Control-Allow-Origin": allowed,
+    "Access-Control-Allow-Methods": "POST, OPTIONS",
+    "Access-Control-Allow-Headers": "Content-Type",
+  };
+}
+
+export async function OPTIONS(req) {
+  const origin = req.headers.get("origin") || "";
+  return new Response(null, { status: 200, headers: cors(origin) });
 }
 
 export async function POST(req) {
-  console.log('Received a new contact form submission');
+  const origin = req.headers.get("origin") || "";
   try {
-    const body = await req.json();
-    const { firstName, lastName, email, company, phone, zipCode, message } = body;
+    const { firstName, lastName, email, company, phone, zipCode, message } =
+      await req.json();
+
+    const fromAddress = "Procure Solutions <info@procuresolutions.org>";
+    // Once your domain is verified, switch to:
+    // const fromAddress = "Procure Solutions <noreply@procuresolutions.org>";
 
     await resend.emails.send({
-      from: 'Procure Solutions <noreply@procuresolutions.org>', // use a domain you verified
-      to: process.env.CONTACT_RECEIVER, // your receiving email
-      subject: 'New Contact Form Submission',
+      from: fromAddress,
+      to: process.env.CONTACT_RECEIVER,
+      replyTo: email,
+      subject: "New Contact Form Submission",
       html: `
         <h2>New Contact Form Submission</h2>
-        <p><b>Name:</b> ${firstName} ${lastName}</p>
-        <p><b>Email:</b> ${email}</p>
-        <p><b>Company:</b> ${company}</p>
-        <p><b>Phone:</b> ${phone}</p>
-        <p><b>Zip Code:</b> ${zipCode}</p>
-        <p><b>Message:</b> ${message}</p>
+        <p><b>Name:</b> ${firstName ?? ""} ${lastName ?? ""}</p>
+        <p><b>Email:</b> ${email ?? ""}</p>
+        <p><b>Company:</b> ${company ?? ""}</p>
+        <p><b>Phone:</b> ${phone ?? ""}</p>
+        <p><b>Zip Code:</b> ${zipCode ?? ""}</p>
+        <p><b>Message:</b> ${message ?? ""}</p>
       `,
     });
 
-    return new Response(JSON.stringify({ success: true }), {
-      status: 200,
-      headers: {
-        "Access-Control-Allow-Origin": "*", // Allow all origins or specify your domain
-      },
-    });
+    return NextResponse.json(
+      { success: true },
+      { status: 200, headers: cors(origin) }
+    );
   } catch (err) {
-    console.error(err);
-    return new Response(JSON.stringify({ success: false, message: err.message }), {
-      status: 500,
-      headers: {
-        "Access-Control-Allow-Origin": "*",
-      },
-    });
+    console.error("Resend error:", err);
+    return NextResponse.json(
+      { success: false, message: err?.message || "Email failed" },
+      { status: 500, headers: cors(origin) }
+    );
   }
 }
+
+
 
 
