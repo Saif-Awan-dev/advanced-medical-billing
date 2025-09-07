@@ -163,7 +163,7 @@ export default function Navbar() {
             <div className="hidden md:flex items-center gap-1  text-black bg-[#f1a10d] dark:text-gray-300 pr-3 py-1 rounded text-lg rounded-l-4xl">
               {/* <BsTelephone className="text-blue-600 " /> */}
               <Image src={PhoneIcon} alt="Phone Icon" width={40} height={50} className="mr-1 text-black" />
-              +1 307-222-9093
+               307-222-9093
             </div>
             
             <ThemeToggle />

@@ -149,7 +149,7 @@ const Footer = () => {
               </p>
               <p className="flex flex-col">
                 <span className="font-semibold">Contact Number:</span>
-                <a href="tel:307-222-9093" className="hover:underline">+1 307-222-9093</a>
+                <a href="tel:307-222-9093" className="hover:underline">307-222-9093</a>
               </p>
             </div>
           </div>

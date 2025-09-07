@@ -117,13 +117,17 @@ const mobileBanners = [MobileBannerFirst,MobileBannerSecond, MobileBannerThird, 
 
 const Homepage = () => {
   const nextRef = useRef<HTMLButtonElement>(null)
+  const mobileRef = useRef<HTMLButtonElement>(null)
 
   useEffect(() => {
     const interval = setInterval(() => {
       if (nextRef.current) { 
         nextRef.current.click()
       }
-    }, 3000) // change slide every 1 second
+      if (mobileRef.current) { 
+        mobileRef.current.click()
+      }
+    }, 3000) // change slide every 3 second
 
     return () => clearInterval(interval)
   }, [])
@@ -132,7 +136,7 @@ const Homepage = () => {
     <div className="min-h-screen bg-[#f1a10d]">
       {/* Hero Carousel Section */}
       <section className="relative overflow-hidden">
-        <Carousel className="hidden lg:block md:block">
+        <Carousel className="hidden lg:block md:block" opts={{ loop: true }}>
           <CarouselContent>
             {banners?.map((banner, idx) => (
               <CarouselItem key={idx} >
@@ -151,11 +155,11 @@ const Homepage = () => {
           <CarouselPrevious className="left-2 sm:left-4 z-10" />
           <CarouselNext ref={nextRef} className="right-2 sm:right-4 z-10" />
         </Carousel>
-        <Carousel className="block px-1 lg:hidden md:hidden">
+        <Carousel className="block px-1 lg:hidden md:hidden" opts={{ loop: true }}>
           <CarouselContent>
             {mobileBanners?.map((banner, idx) => (
               <CarouselItem key={idx} >
-                <div className="relative w-full h-[100vh]">
+                <div className="relative w-full">
                   <Image
                     src={banner}
                     alt={`Banner_${idx + 1}`}
@@ -169,7 +173,7 @@ const Homepage = () => {
             ))}
           </CarouselContent>
           <CarouselPrevious className="left-2 sm:left-4 z-10" />
-          <CarouselNext ref={nextRef} className="right-2 sm:right-4 z-10" />
+          <CarouselNext ref={mobileRef} className="right-2 sm:right-4 z-10" />
         </Carousel>
       </section>
 

@@ -30,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="icon" href={'/assets/images/logoImg.png'} type="svg" sizes="16x16" />
+        <link rel="icon" href={'/assets/images/procureFavicon.svg'} type="image/svg+xml" sizes="16x16" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#f1a10d]`}
