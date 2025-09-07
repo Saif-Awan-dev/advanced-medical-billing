@@ -276,7 +276,7 @@ const MedicalBilling = () => {
             <Card className="bg-white/10 p-4 rounded-lg text-white">
               <CardContent className="p-0">
                 <p className="font-semibold">Call Us</p>
-                <p>+1 307-222-9093</p>
+                <p>307-222-9093</p>
               </CardContent>
             </Card>
           </div>
