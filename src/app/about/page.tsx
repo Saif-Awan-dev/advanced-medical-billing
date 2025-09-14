@@ -9,21 +9,21 @@ const AboutUs = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-blue-50">
       {/* Hero Section */}
-      <section className="relative py-20 bg-[#731664] text-white">
+      <section className="relative py-20 bg-[#1775bb] text-white">
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-12">
             <Badge className="mb-4 bg-white/20 text-white hover:bg-white/30 backdrop-blur-sm">About Procure</Badge>
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Bridging Care and Clarity</h1>
             <p className="text-xl max-w-3xl mx-auto">
-              Delivering precise medical billing and smarter Medicare solutions that maximize revenue, streamline operations, and strengthen patient trust.
+              Delivering precise medical billing that maximize revenue, streamline operations, and strengthen patient trust.
             </p>
           </div>
         </div>
       </section>
 
       {/* Mission Section */}
-      <section className="py-16 bg-[#f1a10d]">
+      <section className="py-16 bg-white/90">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="lg:w-1/2">
@@ -39,8 +39,8 @@ const AboutUs = () => {
             </div>
             <div className="lg:w-1/2">
               <Badge variant="outline" className="mb-4 bg-blue-100 text-blue-800">Our Mission</Badge>
-              <h2 className="text-3xl font-bold text-white mb-6">At Procure, we bridge care and clarity</h2>
-              <p className="text-lg text-white mb-6">
+              <h2 className="text-3xl font-bold text-black mb-6">At Procure, we bridge care and clarity</h2>
+              <p className="text-lg text-black mb-6">
                 We deliver precise medical billing and smarter Medicare solutions that maximize revenue, streamline operations, and strengthen patient trust. Our dedicated team works tirelessly to ensure healthcare providers can focus on what matters most - patient care.
               </p>
               <div className="grid grid-cols-2 gap-4">
@@ -67,11 +67,11 @@ const AboutUs = () => {
       </section>
 
       {/* Values Section */}
-      <section className="py-16  bg-[#f1a10d]">
+      <section className="py-16  bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-white mb-4">Our Core Values</h2>
-            <p className="text-lg text-white max-w-2xl mx-auto">
+            <h2 className="text-3xl font-bold text-black mb-4">Our Core Values</h2>
+            <p className="text-lg text-black max-w-2xl mx-auto">
               The principles that guide everything we do at Procure
             </p>
           </div>
@@ -177,7 +177,7 @@ const AboutUs = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-[#f1a10d]">
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Card className="bg-black rounded-2xl p-8 md:p-12 text-center text-white border-none shadow-xl">
             <CardHeader>

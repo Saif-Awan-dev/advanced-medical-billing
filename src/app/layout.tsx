@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Procure Solutions",
+  title: "Advanced Medical Billing",
   description: "Your trusted partner in healthcare solutions",
 };
 
@@ -33,7 +33,7 @@ export default function RootLayout({
         <link rel="icon" href={'/assets/images/procureFavicon.svg'} type="image/svg+xml" sizes="16x16" />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#f1a10d]`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#1775bb]`}
       >
         <Tagline />
         <ThemeProvider attribute="class" enableSystem defaultTheme="system">

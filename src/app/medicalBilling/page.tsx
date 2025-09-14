@@ -11,18 +11,18 @@ import Link from "next/link"
 
 const MedicalBilling = () => {
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-[#f1a10d]">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-[#1775bb]">
       {/* Hero Section */}
       <section className="flex flex-col lg:flex-row items-center justify-between mb-16 md:mb-24">
         <div className="lg:w-1/2 mb-10 lg:mb-0">
-          <Badge variant="outline" className="mb-4 bg-[#731644] text-white hover:bg-black">Medical Billing Services</Badge>
+          <Badge variant="outline" className="mb-4 bg-white text-black hover:bg-black">Medical Billing Services</Badge>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Empowering Healthcare Providers with Smarter Revenue Solutions
           </h1>
           <p className="text-lg text-white mb-8">
             At Procure, we provide Medical Billing, Virtual Assistance, and EMR Support tailored for healthcare providers who want to maximize revenue, minimize denials, and simplify operations.
           </p>
-          <Button size="lg" className="bg-[#731664] hover:bg-[#1a365d]">
+          <Button size="lg" className="bg-white text-black hover:bg-[#1a365d]">
             <Link href="https://form.typeform.com/to/bC12UNMU?typeform-source=procure.li">Get Started Today</Link>
           </Button>
         </div>
@@ -54,7 +54,7 @@ const MedicalBilling = () => {
         </div>
 
         {/* Medical Billing Service */}
-        <Card className="flex flex-col lg:flex-row items-center mb-16 p-6 bg-[#731644]">
+        <Card className="flex flex-col lg:flex-row items-center mb-16 p-6 bg-white">
           <div className="lg:w-1/2 mb-8 lg:mb-0 lg:pr-8">
             <Card className="flex items-center justify-center p-0 rounded">
               <CardContent className="flex flex-col items-center justify-center p-0">
@@ -74,12 +74,12 @@ const MedicalBilling = () => {
               <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-4">
                 <span className="text-2xl">🏥</span>
               </div>
-              <h3 className="text-2xl font-bold text-white">Medical Billing</h3>
+              <h3 className="text-2xl font-bold text-black">Medical Billing</h3>
             </div>
-            <p className="text-white mb-6">
+            <p className="text-black mb-6">
               Medical billing is the backbone of a successful healthcare practice. Our trained billing experts ensure accurate claim submission, denial management, and faster reimbursements—all while staying fully compliant with ICD-10, CPT, HCPCS, and HIPAA standards.
             </p>
-            <h4 className="font-semibold text-white mb-4">What We Offer in Medical Billing:</h4>
+            <h4 className="font-semibold text-black mb-4">What We Offer in Medical Billing:</h4>
             <ul className="space-y-3 mb-6">
               {[
                 "Claim creation and submission",
@@ -94,7 +94,7 @@ const MedicalBilling = () => {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
-                  <span className="text-white">{item}</span>
+                  <span className="text-black">{item}</span>
                 </li>
               ))}
             </ul>
@@ -105,7 +105,7 @@ const MedicalBilling = () => {
         </Card>
 
         {/* Virtual Assistance Service */}
-        <Card className="flex flex-col lg:flex-row-reverse items-center mb-16 p-6 bg-[#731644]">
+        <Card className="flex flex-col lg:flex-row-reverse items-center mb-16 p-6 bg-white">
           <div className="lg:w-1/2 mb-8 lg:mb-0 lg:pl-8">
             <Card className=" flex items-center justify-center p-0 rounded">
               <CardContent className="flex flex-col items-center justify-center p-0">
@@ -125,12 +125,12 @@ const MedicalBilling = () => {
               <div className="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center mr-4">
                 <span className="text-2xl">💻</span>
               </div>
-              <h3 className="text-2xl font-bold text-white">Virtual Assistance</h3>
+              <h3 className="text-2xl font-bold text-black">Virtual Assistance</h3>
             </div>
-            <p className="text-white mb-6">
+            <p className="text-black mb-6">
               {`Running a practice means juggling patients, paperwork, and calls. Our Virtual Assistants take care of the admin so you don't have to.`}
             </p>
-            <h4 className="font-semibold text-white mb-4">Our Virtual Assistants Handle:</h4>
+            <h4 className="font-semibold text-black mb-4">Our Virtual Assistants Handle:</h4>
             <ul className="space-y-3 mb-6">
               {[
                 "Appointment scheduling & reminders",
@@ -145,18 +145,18 @@ const MedicalBilling = () => {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
-                  <span className="text-white">{item}</span>
+                  <span className="text-black">{item}</span>
                 </li>
               ))}
             </ul>
-            <p className="font-semibold text-white">
+            <p className="font-semibold text-black">
               Available 24/7, our VAs reduce your workload, improve patient experience, and lower operating costs.
             </p>
           </div>
         </Card>
 
         {/* EMR Support Service */}
-        <Card className="flex flex-col lg:flex-row items-center p-6 bg-[#731644]">
+        <Card className="flex flex-col lg:flex-row items-center p-6 bg-white">
           <div className="lg:w-1/2 mb-8 lg:mb-0 lg:pr-8">
             <Card className=" flex items-center justify-center p-0 rounded">
               <CardContent className="p-0 flex flex-col items-center justify-center">
@@ -176,12 +176,12 @@ const MedicalBilling = () => {
               <div className="w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center mr-4">
                 <span className="text-2xl">📋</span>
               </div>
-              <h3 className="text-2xl font-bold text-white">EMR / EHR Support</h3>
+              <h3 className="text-2xl font-bold text-black">EMR / EHR Support</h3>
             </div>
-            <p className="text-white mb-6">
+            <p className="text-black mb-6">
               Managing EMR can be overwhelming—but not with us on your side. We provide complete EMR support so your system works for you, not against you.
             </p>
-            <h4 className="font-semibold text-white mb-4">Our EMR Services Include:</h4>
+            <h4 className="font-semibold text-black mb-4">Our EMR Services Include:</h4>
             <ul className="space-y-3 mb-6">
               {[
                 "System setup & integration",
@@ -196,11 +196,11 @@ const MedicalBilling = () => {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
-                  <span className="text-white">{item}</span>
+                  <span className="text-black">{item}</span>
                 </li>
               ))}
             </ul>
-            <p className="font-semibold text-white">
+            <p className="font-semibold text-black">
               Save time, reduce errors, and get the most out of your EMR system.
             </p>
           </div>
@@ -218,7 +218,7 @@ const MedicalBilling = () => {
           </p>
         </div>
         
-        <Card className="flex flex-col lg:flex-row items-center p-6 bg-[#731644]">
+        <Card className="flex flex-col lg:flex-row items-center p-6 bg-white">
           <div className="lg:w-1/2 mb-8 lg:mb-0 lg:pr-8">
             <Card className="p-0 rounded flex items-center justify-center">
               <CardContent className="p-0 flex flex-col items-center justify-center">
@@ -249,7 +249,7 @@ const MedicalBilling = () => {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
-                  <span className="text-white">{item}</span>
+                  <span className="text-black">{item}</span>
                 </div>
               ))}
             </div>
@@ -270,13 +270,13 @@ const MedicalBilling = () => {
             <Card className="bg-white/10 p-4 rounded-lg text-white">
               <CardContent className="p-0">
                 <p className="font-semibold">Email Us</p>
-                <p>info@procuresolutions.org</p>
+                <p>info@advancedmedicalbilling.org</p>
               </CardContent>
             </Card>
             <Card className="bg-white/10 p-4 rounded-lg text-white">
               <CardContent className="p-0">
                 <p className="font-semibold">Call Us</p>
-                <p>307-222-9093</p>
+                <p>978-382-4188</p>
               </CardContent>
             </Card>
           </div>

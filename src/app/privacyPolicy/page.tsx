@@ -25,7 +25,7 @@ const PrivacyPolicyPage = () => {
         <Card className="mb-6 shadow-md">
           <CardContent className="p-6">
             <p className="text-gray-700">
-              Protecting your private information is our priority. This Statement of Privacy applies to procuresolutions.org, and Procure Healthcare and governs data collection and usage. For the purposes of this Privacy Policy, unless otherwise noted, all references to Procure Technology Corporation include procuresolutions.org, Procure and Procure Technology (Private) Limited. The Procure website is a Marketplace site. By using the Procure website, you consent to the data practices described in this statement.
+              Protecting your private information is our priority. This Statement of Privacy applies to advancedmedicalbilling.org, and Procure Healthcare and governs data collection and usage. For the purposes of this Privacy Policy, unless otherwise noted, all references to Procure Technology Corporation include advancedmedicalbilling.org, Procure and Procure Technology (Private) Limited. The Procure website is a Marketplace site. By using the Procure website, you consent to the data practices described in this statement.
             </p>
           </CardContent>
         </Card>
@@ -282,7 +282,7 @@ const PrivacyPolicyPage = () => {
             <div className="bg-gray-50 p-4 rounded-lg">
               <p className="text-gray-700 font-medium">Procure Healthcare</p>
               <p className="text-gray-700 mt-2">
-                Email Address: <a href="mailto:info@procuresolutions.org" className="text-[#3c65ab] hover:underline">info@procuresolutions.org</a>
+                Email Address: <a href="mailto:info@advancedmedicalbilling.org" className="text-[#3c65ab] hover:underline">info@advancedmedicalbilling.org</a>
               </p>
             </div>
             <p className="text-gray-600 text-sm mt-4">

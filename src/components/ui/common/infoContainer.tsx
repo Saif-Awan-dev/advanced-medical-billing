@@ -53,7 +53,7 @@ const InfoContainer = ({
     imageUrl:StaticImageData | string
 }) => {
     return (
-        <Card className="w-full  max-w-6xl p-4 mx-auto my-12 overflow-hidden border-0 shadow-xl hover:shadow-2xl transition-all duration-300 bg-[#731664] from-white to-slate-50 dark:from-slate-900 dark:to-slate-800">
+        <Card className="w-full  max-w-6xl p-4 mx-auto my-12 overflow-hidden border-0 shadow-xl hover:shadow-2xl transition-all duration-300 bg-white from-white to-slate-50 dark:from-slate-900 dark:to-slate-800">
             <div className="flex flex-col md:flex-row">
                 {/* Image Section */}
                 <div className="md:w-2/5 relative group overflow-hidden">
@@ -74,34 +74,34 @@ const InfoContainer = ({
                 {/* Content Section */}
                 <div className="md:w-3/5 p-8">
                     <div className="flex items-start mb-4">
-                        <Quote className="w-8 h-8 text-[#3c65ab]/20 text-white dark:text-blue-300/30 mr-3 flex-shrink-0" />
-                        <h1 className="font-bold text-2xl md:text-3xl text-white dark:text-blue-300 mb-3 leading-tight">
+                        <Quote className="w-8 h-8 text-[#3c65ab]/20 text-black dark:text-blue-300/30 mr-3 flex-shrink-0" />
+                        <h1 className="font-bold text-2xl md:text-3xl text-black dark:text-blue-300 mb-3 leading-tight">
                             {title}
                         </h1>
                     </div>
                     
-                    <p className="text-white dark:text-gray-300 text-lg leading-relaxed mb-6 line-clamp-4">
+                    <p className="text-black dark:text-gray-300 text-lg leading-relaxed mb-6 line-clamp-4">
                         {text}
                     </p>
 
                     {/* Stats or Features */}
                     <div className="flex gap-6 mb-6">
                         <div className="text-center">
-                            <div className="font-bold text-2xl text-white dark:text-blue-300">10+</div>
-                            <div className="text-sm text-white dark:text-gray-400">Years</div>
+                            <div className="font-bold text-2xl text-black dark:text-blue-300">10+</div>
+                            <div className="text-sm text-black dark:text-gray-400">Years</div>
                         </div>
                         <div className="text-center">
-                            <div className="font-bold text-2xl text-white dark:text-blue-300">100%</div>
-                            <div className="text-sm text-white dark:text-gray-400">Satisfaction</div>
+                            <div className="font-bold text-2xl text-black dark:text-blue-300">100%</div>
+                            <div className="text-sm text-black dark:text-gray-400">Satisfaction</div>
                         </div>
                         <div className="text-center">
-                            <div className="font-bold text-2xl text-white dark:text-blue-300">0</div>
-                            <div className="text-sm text-white dark:text-gray-400">Issues</div>
+                            <div className="font-bold text-2xl text-black dark:text-blue-300">0</div>
+                            <div className="text-sm text-black dark:text-gray-400">Issues</div>
                         </div>
                     </div>
 
                     <Link href={`/${link}`}>
-                        <Button className="bg-white hover:bg-black hover:text-white dark:bg-blue-600 dark:hover:bg-blue-700 px-6 py-3 rounded-full transition-all duration-300 transform hover:scale-105 group cursor-pointer text-black">
+                        <Button className="bg-[#1775bb] hover:bg-black hover:text-white dark:bg-blue-600 dark:hover:bg-blue-700 px-6 py-3 rounded-full transition-all duration-300 transform hover:scale-105 group cursor-pointer text-white">
                             <span className="font-semibold">Read Full Story</span>
                             <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                         </Button>

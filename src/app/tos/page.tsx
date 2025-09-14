@@ -22,13 +22,13 @@ const TermsOfUse = () => {
                 <Card className="mb-6 shadow-md">
                     <CardContent className="p-6">
                         <h2 className="text-xl font-semibold text-[#3c65ab] mb-4">
-                            Agreement between User and procuresolutions.org
+                            Agreement between User and advancedmedicalbilling.org
                         </h2>
                         <p className="text-gray-700 mb-4">
-                            {`Welcome to procuresolutions.org. The procuresolutions.org website (the "Site") is comprised of various web pages operated by Procure Healthcare. procuresolutions.org is offered to you conditioned on your acceptance without modification of the terms, conditions, and notices contained herein (the "Terms"). Your use of procuresolutions.org constitutes your agreement to all such Terms. Please read these terms carefully, and keep a copy of them for your reference.`}
+                            {`Welcome to advancedmedicalbilling.org. The advancedmedicalbilling.org website (the "Site") is comprised of various web pages operated by Procure Healthcare. advancedmedicalbilling.org is offered to you conditioned on your acceptance without modification of the terms, conditions, and notices contained herein (the "Terms"). Your use of advancedmedicalbilling.org constitutes your agreement to all such Terms. Please read these terms carefully, and keep a copy of them for your reference.`}
                         </p>
                         <p className="text-gray-700">
-                            procuresolutions.org is an E-Commerce Site.
+                            advancedmedicalbilling.org is an E-Commerce Site.
                         </p>
                         <p className="text-gray-700 font-medium mt-2">
                             Selling products to businesses
@@ -45,7 +45,7 @@ const TermsOfUse = () => {
                         </AccordionTrigger>
                         <AccordionContent className="px-6 pb-4 bg-white">
                             <p className="text-gray-700">
-                               {`Your use of procuresolutions.org is subject to Procure Healthcare's Privacy Policy. Please review our Privacy Policy, which also governs the Site and informs users of our data collection practices.`}
+                               {`Your use of advancedmedicalbilling.org is subject to Procure Healthcare's Privacy Policy. Please review our Privacy Policy, which also governs the Site and informs users of our data collection practices.`}
                             </p>
                         </AccordionContent>
                     </AccordionItem>
@@ -57,7 +57,7 @@ const TermsOfUse = () => {
                         </AccordionTrigger>
                         <AccordionContent className="px-6 pb-4 bg-white">
                             <p className="text-gray-700">
-                                Visiting procuresolutions.org or sending emails to Procure Healthcare constitutes electronic communications. You consent to receive electronic communications and you agree that all agreements, notices, disclosures and other communications that we provide to you electronically, via email and on the Site, satisfy any legal requirement that such communications be in writing.
+                                Visiting advancedmedicalbilling.org or sending emails to Procure Healthcare constitutes electronic communications. You consent to receive electronic communications and you agree that all agreements, notices, disclosures and other communications that we provide to you electronically, via email and on the Site, satisfy any legal requirement that such communications be in writing.
                             </p>
                         </AccordionContent>
                     </AccordionItem>
@@ -81,7 +81,7 @@ const TermsOfUse = () => {
                         </AccordionTrigger>
                         <AccordionContent className="px-6 pb-4 bg-white">
                             <p className="text-gray-700">
-                                Procure Healthcare does not knowingly collect, either online or offline, personal information from persons under the age of thirteen. If you are under 18, you may use procuresolutions.org only with permission of a parent or guardian.
+                                Procure Healthcare does not knowingly collect, either online or offline, personal information from persons under the age of thirteen. If you are under 18, you may use advancedmedicalbilling.org only with permission of a parent or guardian.
                             </p>
                         </AccordionContent>
                     </AccordionItem>
@@ -105,10 +105,10 @@ const TermsOfUse = () => {
                         </AccordionTrigger>
                         <AccordionContent className="px-6 pb-4 bg-white">
                             <p className="text-gray-700 mb-4">
-                                {`procuresolutions.org may contain links to other websites ("Linked Sites"). The Linked Sites are not under the control of Procure Healthcare and Procure Healthcare is not responsible for the contents of any Linked Site, including without limitation any link contained in a Linked Site, or any changes or updates to a Linked Site. Procure Technology Corporation is providing these links to you only as a convenience, and the inclusion of any link does not imply endorsement by Procure Healthcare of the site or any association with its operators.`}
+                                {`advancedmedicalbilling.org may contain links to other websites ("Linked Sites"). The Linked Sites are not under the control of Procure Healthcare and Procure Healthcare is not responsible for the contents of any Linked Site, including without limitation any link contained in a Linked Site, or any changes or updates to a Linked Site. Procure Technology Corporation is providing these links to you only as a convenience, and the inclusion of any link does not imply endorsement by Procure Healthcare of the site or any association with its operators.`}
                             </p>
                             <p className="text-gray-700">
-                                {`Certain services made available via procuresolutions.org are delivered by third party sites and organizations. By using any product, service or functionality originating from the procuresolutions.org domain, you hereby acknowledge and consent that Procure Healthcare may share such information and data with any third party with whom Procure Technology Corporation has a contractual relationship to provide the requested product, service, or functionality on behalf of procuresolutions.org users and customers.`}
+                                {`Certain services made available via advancedmedicalbilling.org are delivered by third party sites and organizations. By using any product, service or functionality originating from the advancedmedicalbilling.org domain, you hereby acknowledge and consent that Procure Healthcare may share such information and data with any third party with whom Procure Technology Corporation has a contractual relationship to provide the requested product, service, or functionality on behalf of advancedmedicalbilling.org users and customers.`}
                             </p>
                         </AccordionContent>
                     </AccordionItem>
@@ -120,7 +120,7 @@ const TermsOfUse = () => {
                         </AccordionTrigger>
                         <AccordionContent className="px-6 pb-4 bg-white">
                             <p className="text-gray-700 mb-4">
-                                {`You are granted a non-exclusive, non-transferable, revocable license to access and use procuresolutions.org strictly in accordance with these terms of use. As a condition of your use of the Site, you warrant to Procure Technology Corporation that you will not use the Site for any purpose that is unlawful or prohibited by these Terms. You may not use the Site in any manner which could damage, disable, overburden, or impair the Site or interfere with any other party's use and enjoyment of the Site. You may not obtain or attempt to obtain any materials or information through any means not intentionally made available or provided for through the Site.`}
+                                {`You are granted a non-exclusive, non-transferable, revocable license to access and use advancedmedicalbilling.org strictly in accordance with these terms of use. As a condition of your use of the Site, you warrant to Procure Technology Corporation that you will not use the Site for any purpose that is unlawful or prohibited by these Terms. You may not use the Site in any manner which could damage, disable, overburden, or impair the Site or interfere with any other party's use and enjoyment of the Site. You may not obtain or attempt to obtain any materials or information through any means not intentionally made available or provided for through the Site.`}
                             </p>
                             <p className="text-gray-700 mb-4">
                                 All content included as part of the Service, such as text, graphics, logos, images, as well as the compilation thereof, and any software used on the Site, is the property of Procure Healthcare or its suppliers and protected by copyright and other laws that protect intellectual property and proprietary rights. You agree to observe and abide by all copyright and other proprietary notices, legends or other restrictions contained in any such content and will not make any changes thereto.
@@ -138,7 +138,7 @@ const TermsOfUse = () => {
                         </AccordionTrigger>
                         <AccordionContent className="px-6 pb-4 bg-white">
                             <p className="text-gray-700">
-                                The Service is controlled, operated and administered by Procure Technology Corporation from our offices within the USA. If you access the Service from a location outside the USA, you are responsible for compliance with all local laws. You agree that you will not use the Procure Healthcare Content accessed through procuresolutions.org in any country or in any manner prohibited by any applicable laws, restrictions or regulations.
+                                The Service is controlled, operated and administered by Procure Technology Corporation from our offices within the USA. If you access the Service from a location outside the USA, you are responsible for compliance with all local laws. You agree that you will not use the Procure Healthcare Content accessed through advancedmedicalbilling.org in any country or in any manner prohibited by any applicable laws, restrictions or regulations.
                             </p>
                         </AccordionContent>
                     </AccordionItem>
@@ -222,7 +222,7 @@ const TermsOfUse = () => {
                         </AccordionTrigger>
                         <AccordionContent className="px-6 pb-4 bg-white">
                             <p className="text-gray-700">
-                                Procure Healthcare reserves the right, in its sole discretion, to change the Terms under which procuresolutions.org is offered. The most current version of the Terms will supersede all previous versions. Procure Healthcare encourages you to periodically review the Terms to stay informed of our updates.
+                                Procure Healthcare reserves the right, in its sole discretion, to change the Terms under which advancedmedicalbilling.org is offered. The most current version of the Terms will supersede all previous versions. Procure Healthcare encourages you to periodically review the Terms to stay informed of our updates.
                             </p>
                         </AccordionContent>
                     </AccordionItem>
@@ -238,7 +238,7 @@ const TermsOfUse = () => {
                         <div className="bg-gray-50 p-4 rounded-lg">
                             <p className="text-gray-700 font-medium">Procure Healthcare</p>
                             <p className="text-gray-700 mt-2">
-                                Email Address: <a href="mailto:legal@procuresolutions.org" className="text-[#3c65ab] hover:underline">info@procuresolutions.org</a>
+                                Email Address: <a href="mailto:legal@advancedmedicalbilling.org" className="text-[#3c65ab] hover:underline">info@advancedmedicalbilling.org</a>
                             </p>
                         </div>
                         <p className="text-gray-600 text-sm mt-4">

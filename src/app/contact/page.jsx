@@ -27,44 +27,6 @@ const ContactForm = () => {
     }));
   };
 
-  //   const handleSubmit = (e) => {
-  //     e.preventDefault();
-
-  //     // Form validation
-  //     if (!formData.firstName || !formData.lastName || !formData.email || 
-  //         !formData.company || !formData.zipCode) {
-  //       alert('Please fill in all required fields');
-  //       return;
-  //     }
-
-  //     // Email validation
-  //     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  //     if (!emailPattern.test(formData.email)) {
-  //       alert('Please enter a valid email address');
-  //       return;
-  //     }
-
-  //     // In a real application, you would submit the form data to your backend here
-  //     console.log('Form submitted:', formData);
-
-  //     // Show success message
-  //     setIsSubmitted(true);
-
-  //     // Reset form after 3 seconds
-  //     setTimeout(() => {
-  //       setFormData({
-  //         firstName: '',
-  //         lastName: '',
-  //         email: '',
-  //         company: '',
-  //         phone: '',
-  //         zipCode: '',
-  //         message: ''
-  //       });
-  //       setIsSubmitted(false);
-  //     }, 3000);
-  //   };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitted(true);
@@ -99,7 +61,7 @@ const ContactForm = () => {
 
   return (
     <div className="max-w-2xl mx-auto bg-background rounded-xl shadow-md overflow-hidden border my-10">
-      <div className="bg-[#731644] text-primary-foreground p-6 text-center">
+      <div className="bg-[#1775bb] text-primary-foreground p-6 text-center">
         <h2 className="text-2xl font-bold dark:text-white">Get In Touch</h2>
         <p className="mt-2 dark:text-white">We'd love to hear from you. Please fill out the form below.</p>
       </div>
@@ -225,7 +187,7 @@ const ContactForm = () => {
 
           <Button
             type="submit"
-            className="w-full bg-[#731644] cursor-pointer dark:text-white"
+            className="w-full bg-[#1775bb] cursor-pointer dark:text-white"
           >
             <i className="fas fa-paper-plane mr-2"></i>
             Send Message
