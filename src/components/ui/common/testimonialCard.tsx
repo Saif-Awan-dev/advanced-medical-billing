@@ -4,24 +4,24 @@ import { useState, useEffect } from 'react'
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { ChevronLeft, ChevronRight } from "lucide-react"
-import TestimonialImgOne from '../../../../public/assets/images/medicare1.webp'
-import TestimonialImgTwo from '../../../../public/assets/images/reviewsImage2.webp'
+import TestimonialImgOne from '../../../../public/assets/images/Testimonial1Image.jpeg'
+import TestimonialImgTwo from '../../../../public/assets/images/Testimonial2Image.jpg'
 import Image from 'next/image'
 
 const testimonials = [
     {
         id: 1,
-        text: "I am very impressed with the services provided by Procure. They have been handling our billing for the past two years, and we have never had any issues. The team is knowledgeable, responsive and always goes above and beyond to help us. Thank you for your excellent services.",
+        text: "I am very impressed with the services provided by advance medical billing. They have been handling our billing for the past two years, and we have never had any issues. The team is knowledgeable, responsive and always goes above and beyond to help us. Thank you for your excellent services.",
         author: "Norrine McNelley",
-        role: "Mental Health Practitioner",
-        company: "PMHNP_BCAdvanced Psych Care",
+        // role: "Mental Health Practitioner",
+        company: "PMHNP_BC Advanced Psych Care",
         imageUrl: TestimonialImgOne
     },
     {
         id: 2,
         text: "As a doctor, I was having difficulty managing patient calls independently. But since I started getting your Virtual Assistant services, I have been incredibly impressed. Your team is efficient, professional and always goes above and beyond to ensure that my patients are cared for. I'm so grateful for your services' peace of mind, and I can't imagine going back to managing calls on my own.",
         author: "AAFAQUE AKHTER",
-        role: "Mental Health Practitioner,",
+        // role: "Mental Health Practitioner,",
         company: "MD Norton Healthcare",
         imageUrl: TestimonialImgTwo
     },
@@ -87,9 +87,9 @@ export default function TestimonialCarousel() {
                             <div className="font-semibold text-base sm:text-lg md:text-xl">
                                 {testimonials[current].author}
                             </div>
-                            <div className="text-sm sm:text-base text-black">
+                            {/* <div className="text-sm sm:text-base text-black">
                                 {testimonials[current].role}
-                            </div>
+                            </div> */}
                             <div className="text-sm sm:text-base text-black">
                                 {testimonials[current].company}
                             </div>

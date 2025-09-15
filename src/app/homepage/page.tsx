@@ -7,24 +7,15 @@ import Image from "next/image"
 import { useEffect, useRef } from "react"
 import InfoContainer from "@/components/ui/common/infoContainer"
 import TestimonialCarousel from "@/components/ui/common/testimonialCard"
-import MedicalBillingImg from "../../../public/assets/images/medicalBillingImg.jpg"
-import MedicareImg from '../../../public/assets/images/medicare.webp'
-import MedicareBanner from '../../../public/assets/images/banner1.png'
-import SecondBanner from '../../../public/assets/images/banner2.png'
-import ThirdBanner from '../../../public/assets/images/banner3.png'
-import FourthBanner from '../../../public/assets/images/banner4.png'
-import FifthBanner from '../../../public/assets/images/banner5.png'
-import SixthBanner from '../../../public/assets/images/banner6.png'
+import MedicalBillingImg from "../../../public/assets/images/billingClaim.svg"
 import SolarImage from '../../../public/assets/images/solar.jpg'
 import HomeImpImage from '../../../public/assets/images/homeimprovement.jpg'
 import AutoInsuImage from '../../../public/assets/images/autoinsurance.webp'
 import FinalExpImage from '../../../public/assets/images/finalExpense.jpg'
-import MobileBannerFirst from '../../../public/assets/images/mblBanner1.png'
-import MobileBannerSecond from '../../../public/assets/images/mblBanner2.png'
-import MobileBannerThird from '../../../public/assets/images/mblBanner3.png'
-import MobileBannerFourth from '../../../public/assets/images/mblBanner4.png'
-import MobileBannerFifth from '../../../public/assets/images/mblBanner5.png'
-import MobileBannerSix from '../../../public/assets/images/mblBanner6.png'
+import MobileBannerFirst from '../../../public/assets/images/mobileBanner1.png'
+import MobileBannerSecond from '../../../public/assets/images/mobileBanner2.png'
+import MobileBannerThird from '../../../public/assets/images/mobileBanner3.png'
+import MobileBannerFourth from '../../../public/assets/images/mobileBanner4.png'
 import BillingBannerOne from '../../../public/assets/images/billingBanner1.png'
 import BillingBannerTwo from '../../../public/assets/images/billingBanner2.png'
 import BillingBannerThree from '../../../public/assets/images/billingBanner3.png'
@@ -33,7 +24,7 @@ import BillingBannerFour from '../../../public/assets/images/billingBanner4.png'
 import Link from "next/link"
 
 const banners = [BillingBannerOne, BillingBannerTwo, BillingBannerThree, BillingBannerFour]
-const mobileBanners = [MobileBannerFirst,MobileBannerSecond, MobileBannerThird, MobileBannerFourth, MobileBannerFifth, MobileBannerSix]
+const mobileBanners = [MobileBannerFirst,MobileBannerSecond, MobileBannerThird, MobileBannerFourth]
 
 const Homepage = () => {
   const nextRef = useRef<HTMLButtonElement>(null)
@@ -272,7 +263,7 @@ const Homepage = () => {
               What Our Clients Say
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto text-white">
-              Discover why healthcare providers choose Procure for their practice management needs.
+              Discover why healthcare providers choose Advanced Medical Billing for their practice management needs.
             </p>
           </div>
           <TestimonialCarousel />
@@ -286,7 +277,7 @@ const Homepage = () => {
             <CardContent className="p-0">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Transform Your Practice?</h2>
               <p className="text-xl mb-8 max-w-2xl mx-auto">
-                Join hundreds of healthcare providers who trust Procure with their medical billing and practice management needs.
+                Join hundreds of healthcare providers who trust Advanced Medical Billing with their medical billing and practice management needs.
               </p>
               <div className="flex flex-col sm:flex-row justify-center gap-4">
                 <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100 font-semibold">

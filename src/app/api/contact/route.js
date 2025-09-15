@@ -12,7 +12,7 @@ export async function POST(req) {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        from: "Procure Solutions <noreply@procuresolutions.org>", // Safe default sender
+        from: "Advanced Medical Billing <noreply@advancedmedicalbilling.org>", // Safe default sender
         to: process.env.CONTACT_RECEIVER,
         reply_to: email,
         subject: "New Contact Form Submission",

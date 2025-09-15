@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import ExcellenceImage from '../../../public/assets/images/excellence.png'
+import ExcellenceImage from '../../../public/assets/images/growthChart.svg'
 import Image from "next/image"
 import Link from "next/link"
 
@@ -13,7 +13,7 @@ const AboutUs = () => {
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-12">
-            <Badge className="mb-4 bg-white/20 text-white hover:bg-white/30 backdrop-blur-sm">About Procure</Badge>
+            <Badge className="mb-4 bg-white/20 text-white hover:bg-white/30 backdrop-blur-sm">About Medical Billing</Badge>
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Bridging Care and Clarity</h1>
             <p className="text-xl max-w-3xl mx-auto">
               Delivering precise medical billing that maximize revenue, streamline operations, and strengthen patient trust.
@@ -39,9 +39,9 @@ const AboutUs = () => {
             </div>
             <div className="lg:w-1/2">
               <Badge variant="outline" className="mb-4 bg-blue-100 text-blue-800">Our Mission</Badge>
-              <h2 className="text-3xl font-bold text-black mb-6">At Procure, we bridge care and clarity</h2>
+              <h2 className="text-3xl font-bold text-black mb-6">At Medical Billing, we bridge care and clarity</h2>
               <p className="text-lg text-black mb-6">
-                We deliver precise medical billing and smarter Medicare solutions that maximize revenue, streamline operations, and strengthen patient trust. Our dedicated team works tirelessly to ensure healthcare providers can focus on what matters most - patient care.
+                We deliver precise medical billing that maximize revenue, streamline operations, and strengthen patient trust. Our dedicated team works tirelessly to ensure healthcare providers can focus on what matters most - patient care.
               </p>
               <div className="grid grid-cols-2 gap-4">
                 <Card className="bg-blue-50 border-blue-200">

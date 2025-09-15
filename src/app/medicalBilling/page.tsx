@@ -2,10 +2,10 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import HealthCareRevenue from '../../../public/assets/images/healthCareRevenue.png'
-import BillingClaimImg from '../../../public/assets/images/billingClaim.png'
-import EMRImg from '../../../public/assets/images/EMR.jpg'
-import GrowthImg from '../../../public/assets/images/growth.png'
-import CustomerSupportImg from '../../../public/assets/images/customerSupport.png'
+import BillingClaimImg from '../../../public/assets/images/billingClaim.svg'
+import EMRImg from '../../../public/assets/images/EMR.svg'
+import GrowthImg from '../../../public/assets/images/growth.svg'
+import CustomerSupportImg from '../../../public/assets/images/virtualAssistant.svg'
 import Image from "next/image"
 import Link from "next/link"
 
