@@ -76,7 +76,7 @@ const Footer = () => {
               </p>
               <p className="flex flex-col">
                 <span className="font-semibold">Address:</span>
-                <span>44927 George Washington Blvd, Ashburn, VA 20147</span>
+                <span>Pelham New Hampshire, Pelham Nh 03076 USA</span>
               </p>
               <p className="flex flex-col">
                 <span className="font-semibold">Contact Number:</span>

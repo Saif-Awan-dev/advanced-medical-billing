@@ -61,7 +61,7 @@ const ContactForm = () => {
 
   return (
     <div className="max-w-2xl mx-auto bg-background rounded-xl shadow-md overflow-hidden border my-10">
-      <div className="bg-[#1775bb] text-primary-foreground p-6 text-center">
+      <div className="bg-[#652be2] text-primary-foreground p-6 text-center">
         <h2 className="text-2xl font-bold dark:text-white">Get In Touch</h2>
         <p className="mt-2 dark:text-white">We'd love to hear from you. Please fill out the form below.</p>
       </div>
@@ -187,7 +187,7 @@ const ContactForm = () => {
 
           <Button
             type="submit"
-            className="w-full bg-[#1775bb] cursor-pointer dark:text-white"
+            className="w-full bg-[#652be2] cursor-pointer dark:text-white"
           >
             <i className="fas fa-paper-plane mr-2"></i>
             Send Message
