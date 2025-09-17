@@ -101,7 +101,7 @@ const InfoContainer = ({
                     </div>
 
                     <Link href={`/${link}`}>
-                        <Button className="bg-[#1775bb] hover:bg-black hover:text-white dark:bg-blue-600 dark:hover:bg-blue-700 px-6 py-3 rounded-full transition-all duration-300 transform hover:scale-105 group cursor-pointer text-white">
+                        <Button className="bg-[#652be2] hover:bg-black hover:text-white dark:bg-blue-600 dark:hover:bg-blue-700 px-6 py-3 rounded-full transition-all duration-300 transform hover:scale-105 group cursor-pointer text-white">
                             <span className="font-semibold">Read Full Story</span>
                             <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                         </Button>

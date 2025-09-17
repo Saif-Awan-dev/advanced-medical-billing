@@ -82,7 +82,7 @@ export default function Navbar() {
 
                 <NavigationMenuItem>
                   <NavigationMenuLink asChild>
-                    <Link href="https://form.typeform.com/to/bC12UNMU?typeform-source=procure.li" className="px-3 py-2 text-sm font-medium  text-black transition-colors rounded-md ml-2">Get Started Today</Link>
+                    <Link href="/contact" className="px-3 py-2 text-sm font-medium  text-black transition-colors rounded-md ml-2">Get Started Today</Link>
                   </NavigationMenuLink>
                 </NavigationMenuItem>
               </NavigationMenuList>
@@ -91,7 +91,7 @@ export default function Navbar() {
 
           {/* Right side items */}
           <div className="flex items-center gap-4">
-            <div className="hidden md:flex items-center gap-1  text-white bg-[#1775bb] dark:text-gray-300 pr-3 py-1 rounded text-lg rounded-l-4xl">
+            <div className="hidden md:flex items-center gap-1  text-white bg-[#652be2] dark:text-gray-300 pr-3 py-1 rounded text-lg rounded-l-4xl">
               {/* <BsTelephone className="text-blue-600 " /> */}
               <Image src={PhoneIcon} alt="Phone Icon" width={40} height={50} className="mr-1 text-black" />
                978-382-4188
@@ -116,7 +116,7 @@ export default function Navbar() {
             <Link href="/medicare" className="px-3 py-2 text-base font-medium text-white dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition-colors rounded-md">Medicare</Link>
             <Link href="/medicalBilling" className="px-3 py-2 text-base font-medium text-white dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition-colors rounded-md">Medical Billing</Link>
             <Link href="/about" className="px-3 py-2 text-base font-medium text-white dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition-colors rounded-md">About Us</Link>
-            <Link href="https://form.typeform.com/to/bC12UNMU?typeform-source=procure.li" className="px-3 py-2 text-base font-medium text-center bg-[#731644] text-white hover:bg-blue-700 transition-colors rounded-md mt-2">Get Started Today</Link>
+            <Link href="/contact" className="px-3 py-2 text-base font-medium text-center bg-[#731644] text-white hover:bg-blue-700 transition-colors rounded-md mt-2">Get Started Today</Link>
             
             <div className="flex items-center justify-center gap-1 text-white dark:text-gray-300 pt-2">
               <BsTelephone className="text-blue-600" />

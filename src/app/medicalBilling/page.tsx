@@ -11,7 +11,7 @@ import Link from "next/link"
 
 const MedicalBilling = () => {
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-[#1775bb]">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-[#652be2]">
       {/* Hero Section */}
       <section className="flex flex-col lg:flex-row items-center justify-between mb-16 md:mb-24">
         <div className="lg:w-1/2 mb-10 lg:mb-0">
@@ -23,7 +23,7 @@ const MedicalBilling = () => {
             At Procure, we provide Medical Billing, Virtual Assistance, and EMR Support tailored for healthcare providers who want to maximize revenue, minimize denials, and simplify operations.
           </p>
           <Button size="lg" className="bg-white text-black hover:bg-[#1a365d]">
-            <Link href="https://form.typeform.com/to/bC12UNMU?typeform-source=procure.li">Get Started Today</Link>
+            <Link href="/contact">Get Started Today</Link>
           </Button>
         </div>
         <div className="lg:w-1/2 flex justify-center">

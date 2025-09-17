@@ -24,7 +24,7 @@ const Footer = () => {
           
           {/* Quick Links */}
           <div className="text-center md:text-left">
-            <h2 className="font-bold text-lg border-b border-white/30 pb-2 mb-4">Quick Links</h2>
+            <h2 className="font-bold text-lg border-b border-black/30 pb-2 mb-4">Quick Links</h2>
             <ul className="space-y-2">
               <li>
                 <Link href="/homepage" className="hover:underline transition-all">Home</Link>
@@ -36,7 +36,7 @@ const Footer = () => {
                 <Link href="/about" className="hover:underline transition-all">About</Link>
               </li>
               <li>
-                <Link href="https://form.typeform.com/to/bC12UNMU?typeform-source=procure.li" className="hover:underline transition-all">Get Started Today</Link>
+                <Link href="/contact" className="hover:underline transition-all">Get Started Today</Link>
               </li>
               {/* <li>
                 <Link href="/homepage" className="hover:underline transition-all">Careers</Link>
@@ -52,7 +52,7 @@ const Footer = () => {
 
                     {/* Quick Links */}
           <div className="text-center md:text-left">
-            <h2 className="font-bold text-lg border-b border-white/30 pb-2 mb-4">About Us</h2>
+            <h2 className="font-bold text-lg border-b border-black/30 pb-2 mb-4">About Us</h2>
             <ul className="space-y-2">
               <li>
                 <Link href="/homepage" className="hover:underline transition-all">Careers</Link>
@@ -68,7 +68,7 @@ const Footer = () => {
           
           {/* Contact Information */}
           <div className="text-center md:text-left">
-            <h2 className="font-bold text-lg border-b border-white/30 pb-2 mb-4">Mailing Address</h2>
+            <h2 className="font-bold text-lg border-b border-black/30 pb-2 mb-4">Mailing Address</h2>
             <div className="space-y-2">
               <p className="flex flex-col">
                 <span className="font-semibold">Email:</span>

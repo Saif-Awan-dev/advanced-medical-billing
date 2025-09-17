@@ -44,7 +44,7 @@ const Homepage = () => {
   }, [])
 
   return (
-    <div className="min-h-screen bg-[#1775bb]">
+    <div className="min-h-screen bg-[#652be2]">
       {/* Hero Carousel Section */}
       <section className="relative overflow-hidden">
         <Carousel className="hidden lg:block md:block" opts={{ loop: true }}>
@@ -89,7 +89,7 @@ const Homepage = () => {
       </section>
 
       {/* Services Introduction */}
-      <section className="py-16 bg-[#1775bb]">
+      <section className="py-16  bg-[#652be2]">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <Badge variant="outline" className="mb-4 bg-blue-100 text-blue-800 text-base px-3 py-1">
@@ -117,113 +117,6 @@ const Homepage = () => {
               link="medicare"
               imageUrl={MedicareImg}
             /> */}
-          </div>
-
-          {/* Supporting Services Grid */}
-          <div className="mt-16">
-            <h3 className="text-2xl font-semibold text-center text-white mb-8">
-              Additional Support Services
-            </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
-              <Card className="overflow-hidden border-0 shadow-lg hover:shadow-xl transition-shadow bg-white">
-                <div className="flex flex-col md:flex-row">
-                  <div className="md:w-2/5 relative h-48 md:h-auto">
-                    <Image
-                      src={AutoInsuImage}
-                      alt="EMR Support"
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                  <CardContent className="md:w-3/5 p-6">
-                    <Badge className="mb-2 bg-purple-100 text-purple-800">Technology</Badge>
-                    <h4 className="font-bold text-black text-lg mb-2">Auto Insurance</h4>
-                    <p className="text-black">
-                      We care for our clients beyond just providing coverage. With reliable support and guidance whenever you need it most, we’re more than a call centre — we’re your trusted insurance partner.
-                    </p>
-                    {/* <Button variant="link" className="px-0 mt-3 text-blue-600">
-                      Learn more →
-                    </Button> */}
-                  </CardContent>
-                </div>
-              </Card>
-
-              <Card className="overflow-hidden border-0 shadow-lg hover:shadow-xl transition-shadow bg-white">
-                <div className="flex flex-col md:flex-row">
-                  <div className="md:w-2/5 relative h-48 md:h-auto">
-                    <Image
-                      src={SolarImage}
-                      alt="Virtual Assistant"
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                  <CardContent className="md:w-3/5 p-6">
-                    <Badge className="mb-2 bg-green-100 text-green-800">Efficiency</Badge>
-                    <h4 className="font-bold text-black text-lg mb-2"> Solar</h4>
-                    <p className="text-black">
-                      {`We go beyond cold calls — we create real opportunities for your solar business.
-                        With seamless telemarketing support and qualified lead generation,
-                        we’re more than a call centre — we’re your trusted extension in solar.`}
-                    </p>
-                    {/* <Button variant="link" className="px-0 mt-3 text-blue-600">
-                      Learn more →
-                    </Button> */}
-                  </CardContent>
-                </div>
-              </Card>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <Card className="overflow-hidden border-0 shadow-lg hover:shadow-xl transition-shadow bg-white">
-                <div className="flex flex-col md:flex-row">
-                  <div className="md:w-2/5 relative h-76 md:h-auto">
-                    <Image
-                      src={FinalExpImage}
-                      alt="EMR Support"
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                  <CardContent className="md:w-3/5 p-6">
-                    <Badge className="mb-2 bg-purple-100 text-purple-800">Technology</Badge>
-                    <h4 className="font-bold text-black text-lg mb-2">Final Expense</h4>
-                    <p className="text-black">
-                      {`We deliver more than leads — we deliver ready-to-talk Final Expense prospects.
-                        With proven telemarketing strategies and seamless client connections,
-                        we help your agency close more sales and grow with confidence.`}
-                    </p>
-                    {/* <Button variant="link" className="px-0 mt-3 text-blue-600">
-                      Learn more →
-                    </Button> */}
-                  </CardContent>
-                </div>
-              </Card>
-
-              <Card className="overflow-hidden border-0 shadow-lg hover:shadow-xl transition-shadow bg-white">
-                <div className="flex flex-col md:flex-row">
-                  <div className="md:w-2/5 relative h-48 md:h-auto">
-                    <Image
-                      src={HomeImpImage}
-                      alt="Virtual Assistant"
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                  <CardContent className="md:w-3/5 p-6">
-                    <Badge className="mb-2 bg-green-100 text-green-800">Efficiency</Badge>
-                    <h4 className="font-bold text-black text-lg mb-2">Home Improvement</h4>
-                    <p className="text-black">
-                      {`We deliver more than leads — we connect you with homeowners ready for their next project.
-                        With proven telemarketing strategies and seamless appointment setting,
-                        we help your business win more jobs and grow with confidence.`}
-                    </p>
-                    {/* <Button variant="link" className="px-0 mt-3 text-blue-600">
-                      Learn more →
-                    </Button> */}
-                  </CardContent>
-                </div>
-              </Card>
-            </div>
           </div>
         </div>
       </section>
@@ -253,7 +146,7 @@ const Homepage = () => {
       </section>
 
       {/* Testimonials */}
-      <section className="py-16 bg-[#1775bb]">
+      <section className="py-16 bg-[#652be2]">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <Badge variant="outline" className="mb-4 bg-orange-100 text-orange-800 text-base px-3 py-1">
@@ -271,7 +164,7 @@ const Homepage = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-[#1775bb]">
+      <section className="py-16 bg-[#652be2]">
         <div className="container mx-auto px-4">
           <Card className="bg-black rounded-2xl p-8 md:p-12 text-center text-white border-none shadow-xl max-w-4xl mx-auto">
             <CardContent className="p-0">
@@ -280,8 +173,8 @@ const Homepage = () => {
                 Join hundreds of healthcare providers who trust Advanced Medical Billing with their medical billing and practice management needs.
               </p>
               <div className="flex flex-col sm:flex-row justify-center gap-4">
-                <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100 font-semibold">
-                  <Link href="https://form.typeform.com/to/bC12UNMU?typeform-source=procure.li">Get Started</Link>
+                <Button size="lg" className="bg-white text-blue-900 hover:bg-gray-100 font-semibold">
+                  <Link href="/contact">Get Started</Link>
                 </Button>
                 <Button size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white">
                   <Link href="/contact">Contact Sales</Link>

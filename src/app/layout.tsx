@@ -33,7 +33,7 @@ export default function RootLayout({
         <link rel="icon" href={'/assets/images/billingLogo.svg'} type="image/svg+xml" sizes="16x16" />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#1775bb]`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#652be2]`}
       >
         <Tagline />
         <ThemeProvider attribute="class" enableSystem defaultTheme="system">
