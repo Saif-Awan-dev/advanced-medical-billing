@@ -38,7 +38,7 @@ export default function Navbar() {
   return (
     <header className={`sticky top-0 z-50 w-full shadow-lg transition-all duration-300 ${isScrolled ? 'bg-black-500 dark:bg-gray-900/90 backdrop-blur-sm shadow-md text-white' : 'bg-white dark:bg-black'}`}>
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between py-3">
+        <div className="flex items-center justify-between py-1">
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/homepage" className='flex items-center gap-3'>

@@ -8,18 +8,14 @@ import { useEffect, useRef } from "react"
 import InfoContainer from "@/components/ui/common/infoContainer"
 import TestimonialCarousel from "@/components/ui/common/testimonialCard"
 import MedicalBillingImg from "../../../public/assets/images/billingClaim.svg"
-import SolarImage from '../../../public/assets/images/solar.jpg'
-import HomeImpImage from '../../../public/assets/images/homeimprovement.jpg'
-import AutoInsuImage from '../../../public/assets/images/autoinsurance.webp'
-import FinalExpImage from '../../../public/assets/images/finalExpense.jpg'
-import MobileBannerFirst from '../../../public/assets/images/mobileBanner1.png'
-import MobileBannerSecond from '../../../public/assets/images/mobileBanner2.png'
-import MobileBannerThird from '../../../public/assets/images/mobileBanner3.png'
-import MobileBannerFourth from '../../../public/assets/images/mobileBanner4.png'
-import BillingBannerOne from '../../../public/assets/images/billingBanner1.png'
-import BillingBannerTwo from '../../../public/assets/images/billingBanner2.png'
-import BillingBannerThree from '../../../public/assets/images/billingBanner3.png'
-import BillingBannerFour from '../../../public/assets/images/billingBanner4.png'
+import MobileBannerFirst from '../../../public/assets/images/mobileBanner1.svg'
+import MobileBannerSecond from '../../../public/assets/images/mobileBanner2.svg'
+import MobileBannerThird from '../../../public/assets/images/mobileBanner3.svg'
+import MobileBannerFourth from '../../../public/assets/images/mobileBanner4.svg'
+import BillingBannerOne from '../../../public/assets/images/billingBanner1.svg'
+import BillingBannerTwo from '../../../public/assets/images/bilingBanner2.svg'
+import BillingBannerThree from '../../../public/assets/images/billingBanner3.svg'
+import BillingBannerFour from '../../../public/assets/images/billingBanner4.svg'
 
 import Link from "next/link"
 
